@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206287835454",
+    "project_id": "aidlocate-23d34",
+    "storage_bucket": "aidlocate-23d34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206287835454:android:7ddc40be0f8dc2156c1c6f",
+        "android_client_info": {
+          "package_name": "com.example.aidlocate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206287835454-engu1u23najunbfca7nkvt4o7ooenv9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyXqgpbcxbZncaJsKPaFfbUwla7aWZ1KA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206287835454-engu1u23najunbfca7nkvt4o7ooenv9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
