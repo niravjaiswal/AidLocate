@@ -86,3 +86,30 @@ Column mood(String imageName, String mood, Function onTap) {
     ],
   );
 }
+
+Container tag(String name) {
+  return Container(
+    height: 25,
+    padding: EdgeInsets.all(5),
+    margin: EdgeInsets.symmetric(horizontal: 3),
+    decoration: const BoxDecoration(
+      color: Color.fromRGBO(139, 151, 167, 1),
+      borderRadius: BorderRadius.all(Radius.circular(15)),
+    ),
+    child: Text(
+      name,
+      style: TextStyle(fontSize: 10),
+    ),
+  );
+}
+
+String greeting() {
+  var hour = DateTime.now().hour;
+  if (hour < 12) {
+    return 'Morning';
+  }
+  if (hour < 17) {
+    return 'Afternoon';
+  }
+  return 'Evening';
+}
