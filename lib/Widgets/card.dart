@@ -7,7 +7,7 @@ class PlaceCard extends StatefulWidget {
   final String image;
   final List<String> info;
   final List<String> tags;
-  final Function onClick;
+  final Function() onClick;
   PlaceCard(
       this.name, this.city, this.image, this.info, this.tags, this.onClick,
       {Key? key})
@@ -21,6 +21,7 @@ class _PlaceCardState extends State<PlaceCard> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: widget.onClick,
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
@@ -43,10 +44,13 @@ class _PlaceCardState extends State<PlaceCard> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network(
-                  widget.image,
-                  height: 130,
-                  //width: 200,
+                Container(
+                  constraints: const BoxConstraints(
+                      maxWidth: 200), // Set your desired maximum width
+                  child: Image.network(
+                    widget.image,
+                    height: 130,
+                  ),
                 ),
                 const SizedBox(width: 30),
                 Column(

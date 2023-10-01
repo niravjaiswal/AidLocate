@@ -38,6 +38,8 @@ dependencies:
   firebase_auth: ^4.6.3
   cloud_firestore: ^4.8.2
   google_fonts: ^5.1.0
+  date_picker_timeline: ^1.2.5
+  map_launcher: ^2.5.0+1
 
 dev_dependencies:
   flutter_test:
